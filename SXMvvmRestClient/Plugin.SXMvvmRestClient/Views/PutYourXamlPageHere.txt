@@ -1,0 +1,1 @@
+Create New Xaml Page by Simple Right Clicking the Views Folder -> New Item... and choose Xamarin Forms ContentPage

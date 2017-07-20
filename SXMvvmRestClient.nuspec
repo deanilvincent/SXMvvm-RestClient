@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SXMvvmRestClient</id>
+    <version>1.0.0</version>
+    <authors>Mark Deanil Vicente</authors>
+    <owners>Mark Deanil Vicente</owners>
+    <!--
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>-->
+    <iconUrl>http://https://user-images.githubusercontent.com/10904957/28416157-5845d40c-6d85-11e7-995d-444f46483f24.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is simple Mvvm implementation for Cross Platform Development with Rest Client in Xamarin Form.</description>
+    <releaseNotes>First release and ready to use.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>mvvm, sxmvvm, HTTP, REST, Client, Web Services, xamarin, pcl, xam.pcl, plugin, plugin for xamarin, windows phone, winphone, android, xamarin.forms, ios</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid">
+        <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+        <dependency id="Microsoft.Bcl" version="1.1.10" />
+        <dependency id="Microsoft.Net.Http" version="2.2.29" />
+        <dependency id="Newtonsoft.Json" version="8.0.2" />
+      </group>
+      <group targetFramework="Xamarin.iOS10">
+        <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+        <dependency id="Microsoft.Bcl" version="1.1.10" />
+        <dependency id="Microsoft.Net.Http" version="2.2.29" />
+        <dependency id="Newtonsoft.Json" version="8.0.2" />
+      </group>
+      <group targetFramework="uap">
+        <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+        <dependency id="Microsoft.Bcl" version="1.1.10" />
+        <dependency id="Microsoft.Net.Http" version="2.2.29" />
+        <dependency id="Newtonsoft.Json" version="8.0.2" />
+      </group>
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient\Models\MyModel.cs" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Models\MyModel.cs"/>
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient\Views\PutYourXamlPageHere.txt" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Views\PutYourXamlPageHere.txt"/>
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient\ViewModels\MyViewModel.cs" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\ViewModels\MyViewModel.cs"/>
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient\ServicesHandler\MyModelServices.cs" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\ServicesHandler\MyModelServices.cs"/>
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient\RestClientHandler\MyRestClient.cs" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\RestClientHandler\MyRestClient.cs"/>
+
+    <!-- Cross-platform reference assemblies -->
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient\bin\Release\Plugin.SXMvvmRestClient.dll" target="lib\netstandard1.4\Plugin.SXMvvmRestClient.dll" />
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient\bin\Release\Plugin.SXMvvmRestClient.xml" target="lib\netstandard1.4\Plugin.SXMvvmRestClient.xml" />
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient.Abstractions\bin\Release\Plugin.SXMvvmRestClient.Abstractions.dll" target="lib\netstandard1.4\Plugin.SXMvvmRestClient.Abstractions.dll" />
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient.Abstractions\bin\Release\Plugin.SXMvvmRestClient.Abstractions.xml" target="lib\netstandard1.4\Plugin.SXMvvmRestClient.Abstractions.xml" />
+
+    <!-- iOS reference assemblies -->
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient.iOS\bin\Release\Plugin.SXMvvmRestClient.dll" target="lib\Xamarin.iOS10\Plugin.SXMvvmRestClient.dll" />
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient.iOS\bin\Release\Plugin.SXMvvmRestClient.xml" target="lib\Xamarin.iOS10\Plugin.SXMvvmRestClient.xml" />
+
+    <!-- Android reference assemblies -->
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient.Android\bin\Release\Plugin.SXMvvmRestClient.dll" target="lib\MonoAndroid10\Plugin.SXMvvmRestClient.dll" />
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient.Android\bin\Release\Plugin.SXMvvmRestClient.xml" target="lib\MonoAndroid10\Plugin.SXMvvmRestClient.xml" />
+
+    <!-- UWP reference assemblies -->
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient.UWP\bin\Release\Plugin.SXMvvmRestClient.dll" target="lib\UAP10\Plugin.SXMvvmRestClient.dll" />
+    <file src="SXMvvmRestClient\Plugin.SXMvvmRestClient.UWP\bin\Release\Plugin.SXMvvmRestClient.xml" target="lib\UAP10\Plugin.SXMvvmRestClient.xml" />
+  </files>
+</package>
